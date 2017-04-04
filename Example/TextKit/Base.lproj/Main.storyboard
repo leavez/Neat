@@ -1,0 +1,300 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1212" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZTb-hZ-B14">
+                                <rect key="frame" x="200" y="20" width="175" height="288"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T3b-SL-jh3">
+                                        <rect key="frame" x="8" y="8" width="159" height="280"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="gD6-Zu-1FG">
+                                                <rect key="frame" x="-2" y="0.0" width="163" height="44"/>
+                                                <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="textSilderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="9Gi-hf-oCD"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change text" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xb-jb-hlX">
+                                                <rect key="frame" x="0.0" y="29.5" width="159" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="vjz-uh-yiM">
+                                                <rect key="frame" x="-2" y="69" width="163" height="44"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="fontSizeSilderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="aJH-wT-rVh"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="font size" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt9-ZW-PnG">
+                                                <rect key="frame" x="0.0" y="98.5" width="159" height="43.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-1" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="QbX-VS-5io">
+                                                <rect key="frame" x="-2" y="138.5" width="163" height="44"/>
+                                                <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="lineSpacingSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="XNT-pm-WEp"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="line spacing" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTR-2Z-jxF">
+                                                <rect key="frame" x="0.0" y="168" width="159" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="1GB-fn-ihp">
+                                                <rect key="frame" x="-2" y="207.5" width="163" height="44"/>
+                                                <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="lineHeightMultipleChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="YuQ-oP-kvZ"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lineHeightMultiple" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="37o-ED-nZX">
+                                                <rect key="frame" x="0.0" y="237" width="159" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="T3b-SL-jh3" secondAttribute="trailing" constant="8" id="2P7-6C-HgE"/>
+                                    <constraint firstItem="T3b-SL-jh3" firstAttribute="leading" secondItem="ZTb-hZ-B14" secondAttribute="leading" constant="8" id="6ja-cR-D12"/>
+                                    <constraint firstAttribute="bottom" secondItem="T3b-SL-jh3" secondAttribute="bottom" id="GTp-1g-0YK"/>
+                                    <constraint firstItem="T3b-SL-jh3" firstAttribute="top" secondItem="ZTb-hZ-B14" secondAttribute="top" constant="8" id="HyR-TH-Oof"/>
+                                    <constraint firstAttribute="height" constant="288" id="SAe-gs-RoR"/>
+                                </constraints>
+                            </view>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ya4-wf-5MK">
+                                <rect key="frame" x="0.0" y="20" width="200" height="647"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="baL-lr-7ti"/>
+                                </constraints>
+                            </scrollView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09k-rf-Avi">
+                                <rect key="frame" x="200" y="327" width="175" height="340"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Boh-MV-ytz">
+                                        <rect key="frame" x="8" y="8" width="159" height="493.5"/>
+                                        <subviews>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-10" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="j42-bI-s3Q">
+                                                <rect key="frame" x="-2" y="0.0" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="paragrashSpacingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="vpR-8y-RiB"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paragraphSpacing" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBb-Xu-LUq">
+                                                <rect key="frame" x="0.0" y="26.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="UOw-Sc-39a">
+                                                <rect key="frame" x="-2" y="50" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="firstLineHeadIndentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="QYj-Fb-KaS"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="firstLineHeadIndent" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUl-6r-WVW">
+                                                <rect key="frame" x="0.0" y="76.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="ZJv-h9-0DS">
+                                                <rect key="frame" x="-2" y="100" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="headIndentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="lhl-eg-AHA"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="headIndent" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HDU-l9-hwf">
+                                                <rect key="frame" x="0.0" y="126.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-5" maxValue="10" translatesAutoresizingMaskIntoConstraints="NO" id="gN3-AV-l9g">
+                                                <rect key="frame" x="-2" y="150" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="tailIndentChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="zug-DT-O6b"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tailIndent" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oWs-34-RXy">
+                                                <rect key="frame" x="0.0" y="176.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="F3N-cF-LpI">
+                                                <rect key="frame" x="-2" y="200" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="maxNumberOfLinesChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="qA6-Sc-9jp"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maxNumberOfLines" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pHh-Vc-rlB">
+                                                <rect key="frame" x="0.0" y="226.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="6CM-iF-sJt">
+                                                <rect key="frame" x="-2" y="250" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="minimumLineHeightChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Wvw-hg-cuB"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="minimumLineHeight" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iqU-dK-DOe">
+                                                <rect key="frame" x="0.0" y="276.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="10" minValue="10" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="AZv-jL-r5z">
+                                                <rect key="frame" x="-2" y="300" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="maximumLineHeightChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="PSU-Yb-WTc"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="maximumLineHeight" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7ke-Va-7Xq">
+                                                <rect key="frame" x="0.0" y="326.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-10" maxValue="20" translatesAutoresizingMaskIntoConstraints="NO" id="Jzb-D4-cgM">
+                                                <rect key="frame" x="-2" y="350" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="paragraphSpacingBeforeChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="uxT-0r-4Lx"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="paragraphSpacingBefore" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yjg-3s-fRz">
+                                                <rect key="frame" x="0.0" y="376.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="-1" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="Qiv-KV-t3L">
+                                                <rect key="frame" x="-2" y="400" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="BaseWritingDirectionChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="brW-ed-KeC"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="baseWritingDirection" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYm-Qu-tbs">
+                                                <rect key="frame" x="0.0" y="426.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="INx-h2-KTA">
+                                                <rect key="frame" x="-2" y="450" width="163" height="31"/>
+                                                <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <connections>
+                                                    <action selector="hyphenationFactorChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="Pyf-2G-hnF"/>
+                                                </connections>
+                                            </slider>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="hyphenationFactor" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i6p-Nc-DjI">
+                                                <rect key="frame" x="0.0" y="476.5" width="159" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="Boh-MV-ytz" secondAttribute="bottom" constant="8" id="7VM-we-j6S"/>
+                                    <constraint firstItem="Boh-MV-ytz" firstAttribute="width" secondItem="09k-rf-Avi" secondAttribute="width" constant="-16" id="LAz-lr-1H0"/>
+                                    <constraint firstItem="Boh-MV-ytz" firstAttribute="leading" secondItem="09k-rf-Avi" secondAttribute="leading" constant="8" id="NKK-Ag-WaX"/>
+                                    <constraint firstAttribute="trailing" secondItem="Boh-MV-ytz" secondAttribute="trailing" constant="8" id="U23-MO-Mvm"/>
+                                    <constraint firstItem="Boh-MV-ytz" firstAttribute="top" secondItem="09k-rf-Avi" secondAttribute="top" constant="8" id="jEf-KF-DNm"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ZTb-hZ-B14" firstAttribute="leading" secondItem="ya4-wf-5MK" secondAttribute="trailing" id="1Za-Cc-iGw"/>
+                            <constraint firstItem="09k-rf-Avi" firstAttribute="leading" secondItem="ya4-wf-5MK" secondAttribute="trailing" id="CYa-Ga-8g0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ya4-wf-5MK" secondAttribute="bottom" id="HEP-Li-05b"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="09k-rf-Avi" secondAttribute="bottom" id="NSk-xt-quO"/>
+                            <constraint firstItem="ZTb-hZ-B14" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="RPe-6a-z4p"/>
+                            <constraint firstAttribute="trailing" secondItem="09k-rf-Avi" secondAttribute="trailing" id="U3l-DR-LX0"/>
+                            <constraint firstItem="ya4-wf-5MK" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Y7o-IO-n9V"/>
+                            <constraint firstItem="ya4-wf-5MK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Yke-kt-zED"/>
+                            <constraint firstAttribute="trailing" secondItem="ZTb-hZ-B14" secondAttribute="trailing" id="aa9-SD-PZe"/>
+                            <constraint firstItem="09k-rf-Avi" firstAttribute="top" secondItem="ZTb-hZ-B14" secondAttribute="bottom" constant="19" id="p9e-rs-sWT"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="ya4-wf-5MK" id="BTg-zo-Qcl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="661.60000000000002" y="89.505247376311857"/>
+        </scene>
+    </scenes>
+</document>

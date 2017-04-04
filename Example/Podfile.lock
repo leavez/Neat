@@ -1,0 +1,16 @@
+PODS:
+  - Neat (0.1.0)
+
+DEPENDENCIES:
+  - Neat (from `../`)
+
+EXTERNAL SOURCES:
+  Neat:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Neat: a84b901fcedc29b73a6caba7a891d5ee8fae60e5
+
+PODFILE CHECKSUM: bddcfdc8200de2df57b280817b03174268df1253
+
+COCOAPODS: 1.2.0
