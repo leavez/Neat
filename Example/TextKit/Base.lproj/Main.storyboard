@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -27,8 +28,41 @@
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T3b-SL-jh3">
                                         <rect key="frame" x="8" y="8" width="159" height="280"/>
                                         <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jjd-Ji-Z4e">
+                                                <rect key="frame" x="0.0" y="0.0" width="159" height="36"/>
+                                                <subviews>
+                                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="n2K-Yb-geQ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="28"/>
+                                                        <connections>
+                                                            <action selector="enabledFixer:" destination="BYZ-38-t0r" eventType="valueChanged" id="DKe-Af-TQT"/>
+                                                        </connections>
+                                                    </switch>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N9t-rV-24m">
+                                                        <rect key="frame" x="151" y="0.0" width="8" height="36"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                        <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="n2K-Yb-geQ" firstAttribute="top" secondItem="jjd-Ji-Z4e" secondAttribute="top" id="4Da-Q0-Ajh"/>
+                                                    <constraint firstAttribute="bottomMargin" secondItem="n2K-Yb-geQ" secondAttribute="bottom" id="79k-8g-erG"/>
+                                                    <constraint firstAttribute="trailing" secondItem="N9t-rV-24m" secondAttribute="trailing" id="Bp8-IB-pdh"/>
+                                                    <constraint firstItem="n2K-Yb-geQ" firstAttribute="leading" secondItem="jjd-Ji-Z4e" secondAttribute="leading" id="MVA-mf-f0t"/>
+                                                    <constraint firstAttribute="bottom" secondItem="N9t-rV-24m" secondAttribute="bottom" id="Rws-3C-iS3"/>
+                                                    <constraint firstItem="N9t-rV-24m" firstAttribute="top" secondItem="jjd-Ji-Z4e" secondAttribute="top" id="uhx-ni-PJT"/>
+                                                </constraints>
+                                            </view>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="enabled" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4S-Qp-mbb">
+                                                <rect key="frame" x="0.0" y="22.5" width="159" height="36.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
+                                                <nil key="highlightedColor"/>
+                                                <size key="shadowOffset" width="0.0" height="1"/>
+                                            </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="8" translatesAutoresizingMaskIntoConstraints="NO" id="gD6-Zu-1FG">
-                                                <rect key="frame" x="-2" y="0.0" width="163" height="44"/>
+                                                <rect key="frame" x="-2" y="55.5" width="163" height="37"/>
                                                 <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
@@ -36,14 +70,14 @@
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="change text" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Xb-jb-hlX">
-                                                <rect key="frame" x="0.0" y="29.5" width="159" height="43"/>
+                                                <rect key="frame" x="0.0" y="78" width="159" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="15" minValue="10" maxValue="50" translatesAutoresizingMaskIntoConstraints="NO" id="vjz-uh-yiM">
-                                                <rect key="frame" x="-2" y="69" width="163" height="44"/>
+                                                <rect key="frame" x="-2" y="110.5" width="163" height="37.5"/>
                                                 <color key="minimumTrackTintColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
@@ -51,14 +85,14 @@
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="font size" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mt9-ZW-PnG">
-                                                <rect key="frame" x="0.0" y="98.5" width="159" height="43.5"/>
+                                                <rect key="frame" x="0.0" y="133.5" width="159" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="-1" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="QbX-VS-5io">
-                                                <rect key="frame" x="-2" y="138.5" width="163" height="44"/>
+                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="60" translatesAutoresizingMaskIntoConstraints="NO" id="QbX-VS-5io">
+                                                <rect key="frame" x="-2" y="166" width="163" height="37"/>
                                                 <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
@@ -66,14 +100,14 @@
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="line spacing" textAlignment="center" lineBreakMode="tailTruncation" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTR-2Z-jxF">
-                                                <rect key="frame" x="0.0" y="168" width="159" height="43"/>
+                                                <rect key="frame" x="0.0" y="188.5" width="159" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
                                                 <size key="shadowOffset" width="0.0" height="1"/>
                                             </label>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.5" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="1GB-fn-ihp">
-                                                <rect key="frame" x="-2" y="207.5" width="163" height="44"/>
+                                                <rect key="frame" x="-2" y="221" width="163" height="37.5"/>
                                                 <color key="minimumTrackTintColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="maximumTrackTintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <connections>
@@ -81,7 +115,7 @@
                                                 </connections>
                                             </slider>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="lineHeightMultiple" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="37o-ED-nZX">
-                                                <rect key="frame" x="0.0" y="237" width="159" height="43"/>
+                                                <rect key="frame" x="0.0" y="244" width="159" height="36"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" red="0.8078432083" green="0.80392163989999998" blue="0.82352948189999997" alpha="1" colorSpace="deviceRGB"/>
                                                 <nil key="highlightedColor"/>
@@ -290,6 +324,7 @@
                     </view>
                     <connections>
                         <outlet property="scrollView" destination="ya4-wf-5MK" id="BTg-zo-Qcl"/>
+                        <outlet property="valueLabel" destination="N9t-rV-24m" id="Bsc-XI-6ln"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
