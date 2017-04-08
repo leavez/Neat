@@ -34,4 +34,10 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
            baselineOffset:(inout CGFloat *)baselineOffset
           inTextContainer:(NSTextContainer *)textContainer
             forGlyphRange:(NSRange)glyphRange;
+
+/**
+ Calculate the ideal line height (same with UILabel) with fontSize and paragraphStyle.
+ */
++ (CGFloat)fixedLineHeightForFontSize:(CGFloat)fontSize paragraphStyle:(NSParagraphStyle *)style;
+
 @end

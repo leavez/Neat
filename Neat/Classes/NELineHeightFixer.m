@@ -20,6 +20,9 @@
     return instance;
 }
 
++ (CGFloat)fixedLineHeightForFontSize:(CGFloat)fontSize paragraphStyle:(NSParagraphStyle *)style {
+    return [self lineHeightForFont:[UIFont systemFontOfSize:fontSize] paragraphStyle:style];
+}
 
 - (BOOL)layoutManager    :(NSLayoutManager *)layoutManager
 shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
@@ -47,8 +50,8 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
     CGRect usedRect = *lineFragmentUsedRect;
 
     // calculate the right line fragment height
-    CGFloat textLineHeight = [self lineHeightForFont:defaultFont paragraphStyle:style];
-    CGFloat fixedBaseLineOffset = [self baseLineOffsetForLineHeight:textLineHeight font:defaultFont];
+    CGFloat textLineHeight = [self.class lineHeightForFont:defaultFont paragraphStyle:style];
+    CGFloat fixedBaseLineOffset = [self.class baseLineOffsetForLineHeight:textLineHeight font:defaultFont];
 
     rect.size.height = textLineHeight;
     // Some font (like emoji) have large lineHeight than the one we calculated. If we set the usedRect
@@ -147,7 +150,8 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
 
 #pragma mark - private
 
-- (CGFloat)lineHeightForFont:(UIFont *)font paragraphStyle:(NSParagraphStyle *)style  {
+
++ (CGFloat)lineHeightForFont:(UIFont *)font paragraphStyle:(NSParagraphStyle *)style  {
     CGFloat lineHeight = font.lineHeight;
     if (!style) {
         return lineHeight;
@@ -164,7 +168,8 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
     return lineHeight;
 }
 
-- (CGFloat)baseLineOffsetForLineHeight:(CGFloat)lineHeight font:(UIFont *)font {
+
++ (CGFloat)baseLineOffsetForLineHeight:(CGFloat)lineHeight font:(UIFont *)font {
     CGFloat baseLine = lineHeight + font.descender;
     return baseLine;
 }
@@ -229,7 +234,7 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
         if ([font isKindOfClass:[UIFont class]] &&
             (!style || [style isKindOfClass:[NSParagraphStyle class]]) ) {
 
-            CGFloat height = [self lineHeightForFont:font paragraphStyle:style];
+            CGFloat height = [self.class lineHeightForFont:font paragraphStyle:style];
             if (height > lastHeight) {
                 lastHeight = height;
                 findedFont = font;
