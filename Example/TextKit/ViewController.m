@@ -197,11 +197,8 @@
 - (IBAction)maxNumberOfLinesChanged:(UISlider *)sender {
     int value = (int)sender.value;
     [self displayValue:value function:__func__];
-    self.textKitView.renderer.textContainer.maximumNumberOfLines = value;
-    [self.textKitView setNeedsDisplay];
-    [self.textKitView invalidateIntrinsicContentSize];
-    self.label.numberOfLines = value;
     self.maxNumberOfLine = value;
+    [self updateViews];
 }
 
 - (IBAction)minimumLineHeightChanged:(UISlider *)sender {
