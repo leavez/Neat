@@ -28,12 +28,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    [UIFont patchMetrics];
     self.enabled = YES;
+
 
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.hyphenationFactor = 1;
     paragraphStyle.lineSpacing = 0;
+    paragraphStyle.paragraphSpacing = 0;
     self.paragraphStyle = paragraphStyle;
+    self.maxNumberOfLine = 11;
 
     self.attributes =
     [@{NSFontAttributeName : [UIFont systemFontOfSize:18],
@@ -137,6 +142,11 @@
 
 - (IBAction)enabledFixer:(UISwitch *)sender {
     self.enabled = sender.on;
+    if (self.enabled) {
+        [UIFont patchMetrics];
+    } else {
+        [UIFont unpatch];
+    }
     [self updateViews];
 }
 

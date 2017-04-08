@@ -7,19 +7,21 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		137D9257E179D83AB2D32209E19DC9D2 /* NELineHeightFixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 69A970AB8CAA4295C23CB8ACB485CD66 /* NELineHeightFixer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3FD0573B2EBB71BF048F45E80365C1E4 /* Neat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFC43D48484E1C983DDD4C399E24E5 /* Neat-dummy.m */; };
-		4855DCFA07CF28E139D49A9F6A20478B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		23C33ED1B7D9D3ABD6F4C1964EC8AE02 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		41B2C2151BA201110FE5774A589D03CF /* NSLayoutManagerDelegateFixerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 2A4D18DEDC7EB8387FB85D241B16DC9E /* NSLayoutManagerDelegateFixerWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		58014350A664BFC6F1B5E7DA5DE4FCD8 /* Pods-TextKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 212578D25587E070582C5838F784295A /* Pods-TextKit-dummy.m */; };
-		5AAA5B6CB077CBBE093C556E74E4D7E3 /* NSLayoutManager+LineHeightFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B85B16A35EFC3B50B7560844E2AFBA6 /* NSLayoutManager+LineHeightFixer.m */; };
-		622B4C300FD9B7CBE660FFA6507A956A /* NSLayoutManager+LineHeightFixer.h in Headers */ = {isa = PBXBuildFile; fileRef = AB0F7723B5AFC711F6A1951B5FAA40E6 /* NSLayoutManager+LineHeightFixer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		65705012E7E0524B1156373A1DBA48E9 /* NSLayoutManagerDelegateFixerWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 33779738C80663A5DF305B84B40C7445 /* NSLayoutManagerDelegateFixerWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		74308C3DA86A00B72FA25DA2D10EAA8B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		9CABE5090B985492F26DB346905872C1 /* Neat.h in Headers */ = {isa = PBXBuildFile; fileRef = FB7993545BA4DD4357BD22AF53983ED0 /* Neat.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9E828EAF1C2A5D5DC2453FAEF90172A9 /* NELineHeightFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 80C67CD80172AFECD10674D68E98DA7C /* NELineHeightFixer.m */; };
-		AC4AC18F957CA1EF63E09C61AB80A754 /* NSLayoutManagerDelegateFixerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F02368DCFEA0B90F3B68493C07D1E8F /* NSLayoutManagerDelegateFixerWrapper.m */; };
-		C1D40823A84EC242F653C39594E60878 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
-		D1F88CB230BB4AEA3078EA8559213310 /* NELineHeightFixerInner.h in Headers */ = {isa = PBXBuildFile; fileRef = 73A7588FAC70BCF9BB5311087440FDFE /* NELineHeightFixerInner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7A291589A6D0BF4B826DCC2160E30C8E /* NSLayoutManagerDelegateFixerWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 725E62E8532E1E0EB8A35B7DC347B71D /* NSLayoutManagerDelegateFixerWrapper.m */; };
+		90F2725AF73D372FBB804E63F1593E9C /* NSLayoutManager+LineHeightFixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 529581A36C4261563EAD3E4939AF1909 /* NSLayoutManager+LineHeightFixer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A81AEE24D8D4929141C6D4689324D706 /* UIFont+Patch.h in Headers */ = {isa = PBXBuildFile; fileRef = 6C689873B51F6FDAFAB807092A062EC9 /* UIFont+Patch.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B77A2B68D1FC8B41EB4242AA361027AB /* NELineHeightFixerInner.h in Headers */ = {isa = PBXBuildFile; fileRef = 29A344CC11B1C4CDD73EF14277211CD4 /* NELineHeightFixerInner.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B7C043E13443EFAC641C653F2B912B0B /* NELineHeightFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 37E8B7A6777E2FCA8C141AC329AFDBC1 /* NELineHeightFixer.m */; };
+		C06DDEF059798F9EDC6988061A0A66B2 /* Neat-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ABFC43D48484E1C983DDD4C399E24E5 /* Neat-dummy.m */; };
+		C5BF3C17CCEF62EBDAB9A2A1E9F8C1C6 /* NELineHeightFixer.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FC8DE99AAF1CED728DDD08333A64A1C /* NELineHeightFixer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D97EE9AB6EDCCD950E45866810796FC7 /* Neat.h in Headers */ = {isa = PBXBuildFile; fileRef = EE244A110121F06ECCB923FC52B5DAAA /* Neat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E9E16026136894A1707A71AF3B1F1232 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		F4DB0CCB1FA3A7CF3DA672E8E4D74CBB /* NSLayoutManager+LineHeightFixer.m in Sources */ = {isa = PBXBuildFile; fileRef = 026FAB6221748C148D956CBB0D313D10 /* NSLayoutManager+LineHeightFixer.m */; };
+		F6B5C41BF73B0EEFAE4685F2B1983261 /* UIFont+Patch.m in Sources */ = {isa = PBXBuildFile; fileRef = AE7B289C550BE0DE1CFE8F29435D56B6 /* UIFont+Patch.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,52 +29,54 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 54EE4B5DD28C9AD694017549130228DB;
+			remoteGlobalIDString = D298D0B52FC51361FFAFC16E979ECE12;
 			remoteInfo = Neat;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		026FAB6221748C148D956CBB0D313D10 /* NSLayoutManager+LineHeightFixer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutManager+LineHeightFixer.m"; sourceTree = "<group>"; };
 		16EE89C8103491BF0F7FC3EBDCBBEA07 /* libPods-TextKit.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-TextKit.a"; path = "libPods-TextKit.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC8DE99AAF1CED728DDD08333A64A1C /* NELineHeightFixer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NELineHeightFixer.h; sourceTree = "<group>"; };
 		212578D25587E070582C5838F784295A /* Pods-TextKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-TextKit-dummy.m"; sourceTree = "<group>"; };
 		24F4029B6D3FD54945A00D7B7707796D /* Pods-TextKit-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-TextKit-acknowledgements.markdown"; sourceTree = "<group>"; };
+		29A344CC11B1C4CDD73EF14277211CD4 /* NELineHeightFixerInner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NELineHeightFixerInner.h; sourceTree = "<group>"; };
+		2A4D18DEDC7EB8387FB85D241B16DC9E /* NSLayoutManagerDelegateFixerWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSLayoutManagerDelegateFixerWrapper.h; sourceTree = "<group>"; };
 		2B15C6F721661F5AA925D06268438FC2 /* Pods-TextKit-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-TextKit-acknowledgements.plist"; sourceTree = "<group>"; };
 		2C2BCED66825467F1D6D58254C3B0796 /* libNeat.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = libNeat.a; path = libNeat.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		33779738C80663A5DF305B84B40C7445 /* NSLayoutManagerDelegateFixerWrapper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NSLayoutManagerDelegateFixerWrapper.h; sourceTree = "<group>"; };
 		35AECBB35A1F12839C3AD42226850E8E /* Pods-TextKit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextKit.debug.xcconfig"; sourceTree = "<group>"; };
+		37E8B7A6777E2FCA8C141AC329AFDBC1 /* NELineHeightFixer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NELineHeightFixer.m; sourceTree = "<group>"; };
 		494D80F146F7A8D1311761EE39121988 /* Neat.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Neat.xcconfig; sourceTree = "<group>"; };
-		4B85B16A35EFC3B50B7560844E2AFBA6 /* NSLayoutManager+LineHeightFixer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutManager+LineHeightFixer.m"; sourceTree = "<group>"; };
+		529581A36C4261563EAD3E4939AF1909 /* NSLayoutManager+LineHeightFixer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLayoutManager+LineHeightFixer.h"; sourceTree = "<group>"; };
 		5ABFC43D48484E1C983DDD4C399E24E5 /* Neat-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Neat-dummy.m"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		687AF263F8DB32D30E15333C9B337D28 /* Neat-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Neat-prefix.pch"; sourceTree = "<group>"; };
-		69A970AB8CAA4295C23CB8ACB485CD66 /* NELineHeightFixer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NELineHeightFixer.h; sourceTree = "<group>"; };
-		73A7588FAC70BCF9BB5311087440FDFE /* NELineHeightFixerInner.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = NELineHeightFixerInner.h; sourceTree = "<group>"; };
+		6C689873B51F6FDAFAB807092A062EC9 /* UIFont+Patch.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIFont+Patch.h"; sourceTree = "<group>"; };
+		725E62E8532E1E0EB8A35B7DC347B71D /* NSLayoutManagerDelegateFixerWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NSLayoutManagerDelegateFixerWrapper.m; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		80C67CD80172AFECD10674D68E98DA7C /* NELineHeightFixer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NELineHeightFixer.m; sourceTree = "<group>"; };
 		8722C3B46091B5DE2068254898A68559 /* Pods-TextKit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-TextKit.release.xcconfig"; sourceTree = "<group>"; };
-		8F02368DCFEA0B90F3B68493C07D1E8F /* NSLayoutManagerDelegateFixerWrapper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = NSLayoutManagerDelegateFixerWrapper.m; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		AB0F7723B5AFC711F6A1951B5FAA40E6 /* NSLayoutManager+LineHeightFixer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "NSLayoutManager+LineHeightFixer.h"; sourceTree = "<group>"; };
+		AE7B289C550BE0DE1CFE8F29435D56B6 /* UIFont+Patch.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Patch.m"; sourceTree = "<group>"; };
 		D35565D751220F5301957C27465B2779 /* Pods-TextKit-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextKit-resources.sh"; sourceTree = "<group>"; };
+		EE244A110121F06ECCB923FC52B5DAAA /* Neat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Neat.h; sourceTree = "<group>"; };
 		F075C7F58FC15023EABB5112176A1551 /* Pods-TextKit-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-TextKit-frameworks.sh"; sourceTree = "<group>"; };
-		FB7993545BA4DD4357BD22AF53983ED0 /* Neat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = Neat.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		2EEE53CA9339B500368CD7F06772C35E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E16026136894A1707A71AF3B1F1232 /* Foundation.framework in Frameworks */,
+				23C33ED1B7D9D3ABD6F4C1964EC8AE02 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		46D37F27A5407B2A4EFD3F0FFC2BBF8F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				74308C3DA86A00B72FA25DA2D10EAA8B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		50F4FBBC26637D0B6A256744C84B3FE5 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C1D40823A84EC242F653C39594E60878 /* Foundation.framework in Frameworks */,
-				4855DCFA07CF28E139D49A9F6A20478B /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -87,37 +91,39 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		0DF256067B6CC89D9AB6B00B5A098EA3 /* Neat */ = {
-			isa = PBXGroup;
-			children = (
-				22365BE0D08C80E3ACBF813A20325472 /* Classes */,
-			);
-			name = Neat;
-			path = Neat;
-			sourceTree = "<group>";
-		};
-		22365BE0D08C80E3ACBF813A20325472 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				FB7993545BA4DD4357BD22AF53983ED0 /* Neat.h */,
-				69A970AB8CAA4295C23CB8ACB485CD66 /* NELineHeightFixer.h */,
-				80C67CD80172AFECD10674D68E98DA7C /* NELineHeightFixer.m */,
-				73A7588FAC70BCF9BB5311087440FDFE /* NELineHeightFixerInner.h */,
-				AB0F7723B5AFC711F6A1951B5FAA40E6 /* NSLayoutManager+LineHeightFixer.h */,
-				4B85B16A35EFC3B50B7560844E2AFBA6 /* NSLayoutManager+LineHeightFixer.m */,
-				33779738C80663A5DF305B84B40C7445 /* NSLayoutManagerDelegateFixerWrapper.h */,
-				8F02368DCFEA0B90F3B68493C07D1E8F /* NSLayoutManagerDelegateFixerWrapper.m */,
-			);
-			name = Classes;
-			path = Classes;
-			sourceTree = "<group>";
-		};
 		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		50EAEDE60720F8ECCA33F67D1E5FD0DE /* Neat */ = {
+			isa = PBXGroup;
+			children = (
+				517B5AD7595237868EC2CC253788B830 /* Classes */,
+			);
+			name = Neat;
+			path = Neat;
+			sourceTree = "<group>";
+		};
+		517B5AD7595237868EC2CC253788B830 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				EE244A110121F06ECCB923FC52B5DAAA /* Neat.h */,
+				1FC8DE99AAF1CED728DDD08333A64A1C /* NELineHeightFixer.h */,
+				37E8B7A6777E2FCA8C141AC329AFDBC1 /* NELineHeightFixer.m */,
+				29A344CC11B1C4CDD73EF14277211CD4 /* NELineHeightFixerInner.h */,
+				529581A36C4261563EAD3E4939AF1909 /* NSLayoutManager+LineHeightFixer.h */,
+				026FAB6221748C148D956CBB0D313D10 /* NSLayoutManager+LineHeightFixer.m */,
+				2A4D18DEDC7EB8387FB85D241B16DC9E /* NSLayoutManagerDelegateFixerWrapper.h */,
+				725E62E8532E1E0EB8A35B7DC347B71D /* NSLayoutManagerDelegateFixerWrapper.m */,
+				6C689873B51F6FDAFAB807092A062EC9 /* UIFont+Patch.h */,
+				AE7B289C550BE0DE1CFE8F29435D56B6 /* UIFont+Patch.m */,
+			);
+			name = Classes;
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		5B24991E5791650E6343479566C84C54 /* Products */ = {
@@ -177,7 +183,7 @@
 		BAFEB63D66D9DBCC3DD77B7CE5BB6A3D /* Neat */ = {
 			isa = PBXGroup;
 			children = (
-				0DF256067B6CC89D9AB6B00B5A098EA3 /* Neat */,
+				50EAEDE60720F8ECCA33F67D1E5FD0DE /* Neat */,
 				75B53CFFEAB9975052FBC41A3AEE2C5C /* Support Files */,
 			);
 			name = Neat;
@@ -196,15 +202,16 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		14F2D5ED29F508EB1DCF3F8595EFE986 /* Headers */ = {
+		A571E9E870297E7611E8012CAC5354B8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CABE5090B985492F26DB346905872C1 /* Neat.h in Headers */,
-				137D9257E179D83AB2D32209E19DC9D2 /* NELineHeightFixer.h in Headers */,
-				D1F88CB230BB4AEA3078EA8559213310 /* NELineHeightFixerInner.h in Headers */,
-				622B4C300FD9B7CBE660FFA6507A956A /* NSLayoutManager+LineHeightFixer.h in Headers */,
-				65705012E7E0524B1156373A1DBA48E9 /* NSLayoutManagerDelegateFixerWrapper.h in Headers */,
+				D97EE9AB6EDCCD950E45866810796FC7 /* Neat.h in Headers */,
+				C5BF3C17CCEF62EBDAB9A2A1E9F8C1C6 /* NELineHeightFixer.h in Headers */,
+				B77A2B68D1FC8B41EB4242AA361027AB /* NELineHeightFixerInner.h in Headers */,
+				90F2725AF73D372FBB804E63F1593E9C /* NSLayoutManager+LineHeightFixer.h in Headers */,
+				41B2C2151BA201110FE5774A589D03CF /* NSLayoutManagerDelegateFixerWrapper.h in Headers */,
+				A81AEE24D8D4929141C6D4689324D706 /* UIFont+Patch.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -228,13 +235,13 @@
 			productReference = 16EE89C8103491BF0F7FC3EBDCBBEA07 /* libPods-TextKit.a */;
 			productType = "com.apple.product-type.library.static";
 		};
-		54EE4B5DD28C9AD694017549130228DB /* Neat */ = {
+		D298D0B52FC51361FFAFC16E979ECE12 /* Neat */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 6E761497451319619ABE0C3DB828CBBD /* Build configuration list for PBXNativeTarget "Neat" */;
+			buildConfigurationList = 1195675A274428B6F01AC31DD4D965DC /* Build configuration list for PBXNativeTarget "Neat" */;
 			buildPhases = (
-				C972F52911F9F26933DD89A72995288A /* Sources */,
-				50F4FBBC26637D0B6A256744C84B3FE5 /* Frameworks */,
-				14F2D5ED29F508EB1DCF3F8595EFE986 /* Headers */,
+				BCF40172F92B9E8764DD8969CD3D6597 /* Sources */,
+				2EEE53CA9339B500368CD7F06772C35E /* Frameworks */,
+				A571E9E870297E7611E8012CAC5354B8 /* Headers */,
 			);
 			buildRules = (
 			);
@@ -266,7 +273,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				54EE4B5DD28C9AD694017549130228DB /* Neat */,
+				D298D0B52FC51361FFAFC16E979ECE12 /* Neat */,
 				506A68FD87C4FA1E878ED14BAB035868 /* Pods-TextKit */,
 			);
 		};
@@ -281,14 +288,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C972F52911F9F26933DD89A72995288A /* Sources */ = {
+		BCF40172F92B9E8764DD8969CD3D6597 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3FD0573B2EBB71BF048F45E80365C1E4 /* Neat-dummy.m in Sources */,
-				9E828EAF1C2A5D5DC2453FAEF90172A9 /* NELineHeightFixer.m in Sources */,
-				5AAA5B6CB077CBBE093C556E74E4D7E3 /* NSLayoutManager+LineHeightFixer.m in Sources */,
-				AC4AC18F957CA1EF63E09C61AB80A754 /* NSLayoutManagerDelegateFixerWrapper.m in Sources */,
+				C06DDEF059798F9EDC6988061A0A66B2 /* Neat-dummy.m in Sources */,
+				B7C043E13443EFAC641C653F2B912B0B /* NELineHeightFixer.m in Sources */,
+				F4DB0CCB1FA3A7CF3DA672E8E4D74CBB /* NSLayoutManager+LineHeightFixer.m in Sources */,
+				7A291589A6D0BF4B826DCC2160E30C8E /* NSLayoutManagerDelegateFixerWrapper.m in Sources */,
+				F6B5C41BF73B0EEFAE4685F2B1983261 /* UIFont+Patch.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,7 +306,7 @@
 		7BE4D88F25DABDFA3F4BD7F5433E341C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = Neat;
-			target = 54EE4B5DD28C9AD694017549130228DB /* Neat */;
+			target = D298D0B52FC51361FFAFC16E979ECE12 /* Neat */;
 			targetProxy = EBF943E60B59D0A5051D8E509F9DCD71 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -327,7 +335,7 @@
 			};
 			name = Debug;
 		};
-		25014B31BA05EC7828AFC8937656A45C /* Release */ = {
+		356AA2988715E54D857C5AC7BAEBB80E /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 494D80F146F7A8D1311761EE39121988 /* Neat.xcconfig */;
 			buildSettings = {
@@ -349,29 +357,6 @@
 				SKIP_INSTALL = YES;
 			};
 			name = Release;
-		};
-		56FE68C941CE2ED1CD2C60EF6B69102C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 494D80F146F7A8D1311761EE39121988 /* Neat.xcconfig */;
-			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/Neat/Neat-prefix.pch";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PRIVATE_HEADERS_FOLDER_PATH = "";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				PUBLIC_HEADERS_FOLDER_PATH = "";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
 		};
 		673254EEAF0B5BF4596080C749645884 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -412,6 +397,29 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		BAE3D1BECB9CBED578F1AD9FAD6EF964 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 494D80F146F7A8D1311761EE39121988 /* Neat.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Neat/Neat-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
 		};
 		E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -483,6 +491,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		1195675A274428B6F01AC31DD4D965DC /* Build configuration list for PBXNativeTarget "Neat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BAE3D1BECB9CBED578F1AD9FAD6EF964 /* Debug */,
+				356AA2988715E54D857C5AC7BAEBB80E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2247BA059FCE7289E7BB7A48452F59B7 /* Build configuration list for PBXNativeTarget "Pods-TextKit" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -497,15 +514,6 @@
 			buildConfigurations = (
 				E4F26E6EB105713A6A7E7E2E283AC2DF /* Debug */,
 				673254EEAF0B5BF4596080C749645884 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		6E761497451319619ABE0C3DB828CBBD /* Build configuration list for PBXNativeTarget "Neat" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				56FE68C941CE2ED1CD2C60EF6B69102C /* Debug */,
-				25014B31BA05EC7828AFC8937656A45C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
