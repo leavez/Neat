@@ -1,17 +1,18 @@
 # Neat
 
-[![CI Status](http://img.shields.io/travis/gaojiji@gmail.com/Neat.svg?style=flat)](https://travis-ci.org/gaojiji@gmail.com/Neat)
 [![Version](https://img.shields.io/cocoapods/v/Neat.svg?style=flat)](http://cocoapods.org/pods/Neat)
 [![License](https://img.shields.io/cocoapods/l/Neat.svg?style=flat)](http://cocoapods.org/pods/Neat)
 [![Platform](https://img.shields.io/cocoapods/p/Neat.svg?style=flat)](http://cocoapods.org/pods/Neat)
 
 Neat is a tool solve the line height problems when using TextKit on iOS. 
 
-Line heights (or the visual line sapcings) displayed by TextKit vary on different lines when mixing different languages in one text. It looks very ungracefull and breaks the beauty of text layout. A common example is Chinese-English mixed layout, and even English-emoji mix cannot escape!! `UILabel` and `UITextView` handle this very well. Neat make TextKit views look exactly the same to `UILabel`.
+Line heights (or the visual line sapcings) displayed by TextKit vary on different lines when mixing different languages in one text. It looks very ungraceful and breaks the beauty of text layout. A common example is Chinese-English mixed layout, and even English-emoji mix cannot escape!! `UILabel` and `UITextView` handle this very well. Neat make TextKit views look exactly the same to `UILabel`.
 
-[pictures]
+![](./Example/problems.png)
 
 Neat also remove the extra line spacing of last line when text is truncated to the maxNumberOfLines. It may, but not always, happen when `lineSpacing` is greater than zero. This function makes it very convenient to constrain the spaces between textView and other views.
+
+[ComponentKit](https://github.com/facebook/componentkit) could be fixed with Neat.
 
 ## Install
 
