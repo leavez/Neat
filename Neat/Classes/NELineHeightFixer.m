@@ -51,7 +51,14 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
     CGFloat fixedBaseLineOffset = [self baseLineOffsetForLineHeight:textLineHeight font:defaultFont];
 
     rect.size.height = textLineHeight;
-    usedRect.size.height = textLineHeight;
+    // Some font (like emoji) have large lineHeight than the one we calculated. If we set the usedRect
+    // to a small line height, it will make the last line to disappear. So here we only adopt the calcuated
+    // lineHeight when is larger than the original.
+    //
+    // This may lead to a unwanted result that textView have extra pading below last line. To solve this
+    // problem, you could set maxLineHeight to lineHeight we calculated using ``.
+    usedRect.size.height = MAX(textLineHeight, usedRect.size.height);
+
 
     /*
      From apple's doc:
@@ -60,7 +67,6 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
      */
 
     CGRect strippedRect = rect;
-    CGRect strippedUsedRect = usedRect;
     NSInteger lastIndexOfCurrentRange = glyphRange.location + glyphRange.length - 1;
 
     // line spacing
@@ -124,17 +130,13 @@ shouldSetLineFragmentRect:(inout CGRect *)lineFragmentRect
         }
     }
 
-    // solve the problem of last line disappearing. It happens when minimumLineHeight is set.
-    // This is for some fonts like "PingFang SC". "SF UI" 's leading is zero.
-    if (strippedUsedRect.size.height > font.lineHeight) {
-        usedRect.size.height += font.leading;
-    }
-
     *lineFragmentRect = rect;
     *lineFragmentUsedRect = usedRect;
     *baselineOffset = fixedBaseLineOffset;
     return YES;
 }
+
+
 
 // Implementing this method with a return value 0 will solve the problem of last line disappearing
 // when both maxNumberOfLines and lineSpacing are set, since we didn't include the lineSpacing in
