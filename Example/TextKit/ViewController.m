@@ -165,8 +165,14 @@
     [self updateViews];
 }
 - (IBAction)textSilderChanged:(UISlider *)sender {
-    NSString *text = [self textOfIndex:(NSInteger)(sender.value)];
+    NSInteger value = (NSInteger)sender.value;
+    NSString *text = [self textOfIndex:value];
     self.text = [[NSMutableAttributedString alloc] initWithString:text attributes:self.attributes];
+    if (value >= 7 ) {
+        UIFont *current = (UIFont *)(self.attributes[NSFontAttributeName]);
+        [self.text addAttribute:NSFontAttributeName value:[UIFont systemFontOfSize:current.pointSize*2] range:NSMakeRange(29
+                                                                                                                          , 2)];
+    }
     [self updateViews];
 }
 
