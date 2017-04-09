@@ -1,30 +1,18 @@
-#
-# Be sure to run `pod lib lint Neat.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see http://guides.cocoapods.org/syntax/podspec.html
-#
 
 Pod::Spec.new do |s|
   s.name             = 'Neat'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of Neat.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.version          = '0.1'
+  s.summary          = 'Fix the line height problems of TextKit'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Neat is a tool solve the line height problems when using TextKit on iOS.
+
+Line heights (or the visual line sapcings) displayed by TextKit vary on different lines when mixing different languages in one text. It looks very ungraceful and breaks the beauty of text layout. A common example is Chinese-English mixed layout, and even English-emoji mix cannot escape!! UILabel and UITextView handle this very well. Neat make TextKit views look exactly the same to UILabel.
                        DESC
 
-  s.homepage         = 'https://github.com/gaojiji@gmail.com/Neat'
+  s.homepage         = 'https://github.com/leavez/Neat'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'gaojiji@gmail.com' => 'gaoji@zhihu.com' }
-  s.source           = { :git => 'https://github.com/gaojiji@gmail.com/Neat.git', :tag => s.version.to_s }
+  s.author           = { 'Leavez' => 'gaoji@zhihu.com' }
+  s.source           = { :git => 'https://github.com/leavez/Neat.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
